@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="22.127" tests="2" skipped="0" failures="2" errors="0">
+<testcase classname="Login_test" name="TC01_Müster_Login" time="11.237">
+<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;a class=&quot;btn btn-outline-light btn-sm&quot; id=&quot;menu_login&quot; href=&quot;hesap-olustur&quot;&gt;...&lt;/a&gt; is not clickable at point (755, 38). Other element would receive the click: &lt;a class=&quot;btn btn-link btn-sm header-destek&quot; href=&quot;/tl-yukle&quot; id=&quot;menu_load_money&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=127.0.6533.89)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JL08P7E', ip: '192.168.1.16', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\Yunus\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50379}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 429cf522e9a542f6efd2242daf0ebe2f">
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="btn btn-outline-light btn-sm" id="menu_login" href="hesap-olustur">...</a> is not clickable at point (755, 38). Other element would receive the click: <a class="btn btn-link btn-sm header-destek" href="/tl-yukle" id="menu_load_money">...</a>
+  (Session info: chrome=127.0.6533.89)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JL08P7E', ip: '192.168.1.16', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\Yunus\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50379}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 429cf522e9a542f6efd2242daf0ebe2f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at utilities.ReusableMethods.click(ReusableMethods.java:61)
+	at stepdefinitions.loginstepdefinitions.kullanıcı_anasayfa_giris_yap_butonuna_tıklar(loginstepdefinitions.java:26)
+	at ✽.kullanıcı Anasayfa Giris Yap butonuna tıklar(file:///C:/Users/Yunus/Desktop/ParamTech_LoginTest/src/test/resources/features/login_test.feature:6)
+]]>
+</failure>
+<system-out><![CDATA[
+Given kullanıcı url adresine gider..........................................passed
+When kullanıcı Anasayfa Giris Yap butonuna tıklar...........................failed
+And kullanıcı Kurumsal Giris butonuna tıklar................................skipped
+Then kullanıcı login sayfasını dogrular.....................................skipped
+When kullanıcı yanlıs TCKN girer............................................skipped
+And kullanıcı yanlıs sifre girer............................................skipped
+And kullanıcı Giris Yap butonuna tıklar.....................................skipped
+Then kullanıcı Hatalı Giris validasyon uyarısını dogrular...................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Login_test" name="TC02_Kullanıcı_Hesap_Olusturma" time="10.303">
+<failure type="org.openqa.selenium.InvalidSelectorException" message="invalid selector
+from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;Unable to locate an element with the xpath expression //*[.='Hoş Geldin!'])[2] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[.='Hoş Geldin!'])[2]' is not a valid XPath expression.&quot;}
+  (Session info: chrome=127.0.6533.89)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JL08P7E', ip: '192.168.1.16', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\Yunus\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50423}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 574b20ca6c81c25c4ac31d30190f59ec
+*** Element info: {Using=xpath, value=//*[.='Hoş Geldin!'])[2]}">
+<![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //*[.='Hoş Geldin!'])[2] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[.='Hoş Geldin!'])[2]' is not a valid XPath expression."}
+  (Session info: chrome=127.0.6533.89)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JL08P7E', ip: '192.168.1.16', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\Yunus\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50423}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 574b20ca6c81c25c4ac31d30190f59ec
+*** Element info: {Using=xpath, value=//*[.='Hoş Geldin!'])[2]}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.equals(Unknown Source)
+	at org.junit.Assert.isEquals(Assert.java:133)
+	at org.junit.Assert.equalsRegardingNull(Assert.java:129)
+	at org.junit.Assert.assertEquals(Assert.java:112)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepdefinitions.loginstepdefinitions.kullanıcı_login_sayfasını_dogrular(loginstepdefinitions.java:37)
+	at ✽.kullanıcı login sayfasını dogrular(file:///C:/Users/Yunus/Desktop/ParamTech_LoginTest/src/test/resources/features/login_test.feature:8)
+]]>
+</failure>
+<system-out><![CDATA[
+Given kullanıcı url adresine gider..........................................passed
+When kullanıcı Anasayfa Giris Yap butonuna tıklar...........................passed
+And kullanıcı Kurumsal Giris butonuna tıklar................................passed
+Then kullanıcı login sayfasını dogrular.....................................failed
+When kullanıcı Ad girer.....................................................skipped
+And kullanıcı Soyad girer...................................................skipped
+And kullanıcı E-posta Adresi girer..........................................skipped
+And kullanıcı Cep Telefonu Numarası girer...................................skipped
+And kullanıcı izinleri onaylar..............................................skipped
+And kullanıcı devam butonuna tıklar.........................................skipped
+And kullanıcı yanlıs Onay Kodu girer........................................skipped
+Then kullanıcı Hatalı onay kodu uyarısını dogrular..........................skipped
+]]></system-out>
+</testcase>
+</testsuite>
